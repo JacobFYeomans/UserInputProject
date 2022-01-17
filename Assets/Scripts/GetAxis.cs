@@ -21,8 +21,8 @@ public class GetAxis : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float v = (horizontalSpeed * Time.deltaTime) * Input.GetAxis("Mouse Y");
-        float h = (verticalSpeed * Time.deltaTime) * Input.GetAxis("Mouse X");
+        float v = (horizontalSpeed * Time.deltaTime) * Input.GetAxis("Vertical");
+        float h = (verticalSpeed * Time.deltaTime) * Input.GetAxis("Horizontal");
         transform.Translate(h, 0, v);
     }
 }
